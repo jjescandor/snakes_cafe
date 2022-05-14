@@ -19,7 +19,7 @@ intro = """
 **************************************
 **    Welcome to the Snakes Cafe!   **
 **    Please see our menu below.    **
-**
+**                                  **
 ** To quit at any time, type "quit" **
 **************************************
 """
@@ -30,7 +30,7 @@ prompt = """
 ***********************************
 """
 
-outro = """**Thanks for visiting Snakes Cafe**
+outro = """**Thank you for visiting Snakes Cafe**
 **Order Summary**"""
 
 print(intro)
