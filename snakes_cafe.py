@@ -31,7 +31,7 @@ prompt = """
 """
 
 outro = """**Thanks for visiting Snakes Cafe**
-**Here is the summary of your order**"""
+**Order Summary**"""
 
 print(intro)
 def display_menu():
