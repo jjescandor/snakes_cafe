@@ -1,6 +1,7 @@
 
 orders = []
 special_orders = []
+all_menu_list = []
 
 all_menu = {
     "Appetizers": ["Wings", "Cookies", "Spring Rolls"],
@@ -8,8 +9,6 @@ all_menu = {
     "Desserts": ["Ice Cream", "Cake", "Pie"],
     "Drinks": ["Coffee", "Tea", "Unicorn Tears"]
 }
-
-all_menu_list = []
 
 intro = """
 *****************************************
@@ -27,7 +26,7 @@ prompt = """
 """
 
 outro = """**Thank you for visiting Snakes Cafe**
-**Order Summary**"""
+\n**Order Summary**"""
 
 print(intro)
 def display_menu():
