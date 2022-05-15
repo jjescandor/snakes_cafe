@@ -9,11 +9,7 @@ all_menu = {
     "Drinks": ["Coffee", "Tea", "Unicorn Tears"]
 }
 
-all_menu_list = [
-    "wings", "cookies", "spring rolls", "salmon", "steak",
-    "meat tornado", "a literal garden", "ice cream", "cake",
-    "pie", "coffee", "tea", "unicorn tears"
-]
+all_menu_list = []
 
 intro = """
 *****************************************
@@ -40,6 +36,7 @@ def display_menu():
         print("-" *6)
         for item in all_menu[menu]:
             print(item)
+            all_menu_list.append(item.lower())
         print("")
     print(prompt)
 display_menu()
