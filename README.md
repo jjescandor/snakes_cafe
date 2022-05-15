@@ -5,6 +5,7 @@
 
 ### Methodology
 1. Create all_menu dictionary
+1. Create all_menu_list list
 1. Create display_menu function
 1. Create order_menu function
 1. create order_summary functio
