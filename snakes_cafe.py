@@ -1,5 +1,4 @@
 
-run = True
 orders = []
 special_orders = []
 
@@ -62,28 +61,30 @@ def order_summary():
             s = "s"
         print(f"Special: {cnt} order{s} of {special}")
 
-while run:
-    def order_menu():
-        user_input = input("> ")
-        if user_input.lower() not in all_menu_list and user_input.lower() != "quit":
-            print("Item not in the menu, press Y to place special order")
-            custom = input("> ")
-            if custom.lower() == "y":
-                special_orders.append(user_input)
-                cnt = special_orders.count(user_input)
-                s = ""
-                if cnt > 1:
-                    s = "s"
-                print(f"Special: {cnt} order{s} of {user_input} have been added to your meal")
-        if user_input.lower() in all_menu_list:
-            orders.append(user_input)
-            cnt = orders.count(user_input)
+
+def order_menu():
+    user_input = input("> ")
+    if user_input.lower() not in all_menu_list and user_input.lower() != "quit":
+        print("Item not in the menu, press Y to place special order")
+        custom = input("> ")
+        if custom.lower() == "y":
+            special_orders.append(user_input)
+            cnt = special_orders.count(user_input)
             s = ""
             if cnt > 1:
                 s = "s"
-            print(f"{cnt} order{s} of {user_input} have been added to your meal")
-        if user_input.lower() == "quit":
-            import sys
-            order_summary()
-            sys.exit(0)
+            print(f"Special: {cnt} order{s} of {user_input} have been added to your meal")
+    if user_input.lower() in all_menu_list:
+        orders.append(user_input)
+        cnt = orders.count(user_input)
+        s = ""
+        if cnt > 1:
+            s = "s"
+        print(f"{cnt} order{s} of {user_input} have been added to your meal")
+    if user_input.lower() == "quit":
+        import sys
+        order_summary()
+        sys.exit(0)
+
+while True:
     order_menu()
