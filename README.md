@@ -4,7 +4,7 @@
 #### Project: Snakes_cafe
 #### Author: JJ Escandor
 
-1. Command to run the application: python3 madlib_cli/madlib.py
+1. Command to run the application: python3 snakes_cafe.py
 
 #### Description
 
